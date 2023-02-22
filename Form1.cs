@@ -5,7 +5,11 @@ namespace codigoProyecto
         public Form1()
         {
             InitializeComponent();
-           
+           // Afegim els elements al primer control ListBox
+            listBox1.Items.Add("Informàtica");
+            listBox1.Items.Add("Administració i gestió");
+            listBox1.Items.Add("Disseny");
+            listBox1.Items.Add("Educació social");
             
 
         }
@@ -15,11 +19,7 @@ namespace codigoProyecto
         
         {
         
-            // Afegim els elements al primer control ListBox
-            listBox1.Items.Add("Informàtica");
-            listBox1.Items.Add("Administració i gestió");
-            listBox1.Items.Add("Disseny");
-            listBox1.Items.Add("Educació social");
+            
             // Verifiquem si s'ha seleccionat l'element "Informàtica"
             if (listBox1.SelectedItem.ToString() == "Informàtica")
             {
