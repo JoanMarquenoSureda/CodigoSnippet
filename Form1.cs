@@ -6,18 +6,22 @@ namespace codigoProyecto
         {
             InitializeComponent();
            
-            // Afegim els elements al primer control ListBox
-            listBox1.Items.Add("Inform‡tica");
-            listBox1.Items.Add("AdministraciÛ i gestiÛ");
-            listBox1.Items.Add("Disseny");
-            listBox1.Items.Add("EducaciÛ social");
+            
 
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        
+        
         {
-            // Verifiquem si s'ha seleccionat l'element "Inform‡tica"
-            if (listBox1.SelectedItem.ToString() == "Inform‡tica")
+        
+            // Afegim els elements al primer control ListBox
+            listBox1.Items.Add("Inform√†tica");
+            listBox1.Items.Add("Administraci√≥ i gesti√≥");
+            listBox1.Items.Add("Disseny");
+            listBox1.Items.Add("Educaci√≥ social");
+            // Verifiquem si s'ha seleccionat l'element "Inform√†tica"
+            if (listBox1.SelectedItem.ToString() == "Inform√†tica")
             {
                 // Configurem el segon control ListBox
                 listBox2.Items.Clear();
