@@ -6,11 +6,9 @@ namespace codigoProyecto
         public Form1()
         {
             InitializeComponent();
-            // afegir imatges a la llista d'imatges
+           
             
 
-            // establir la imatge inicial de la PictureBox
-            pictureBox1.Image = imageList1.Images[currentImageIndex];
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -18,22 +16,21 @@ namespace codigoProyecto
         
         {
         
-            
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // incrementar l'índex de la imatge actual
-            currentImageIndex++;
-
-            // si arribem al final de la llista d'imatges, tornem a la primera imatge
-            if (currentImageIndex >= imageList1.Images.Count)
+            // Afegim els elements al primer control ListBox
+            listBox1.Items.Add("Informàtica");
+            listBox1.Items.Add("Administració i gestió");
+            listBox1.Items.Add("Disseny");
+            listBox1.Items.Add("Educació social");
+            // Verifiquem si s'ha seleccionat l'element "Informàtica"
+            if (listBox1.SelectedItem.ToString() == "Informàtica")
+            {
+                // Configurem el segon control ListBox
+                listBox2.Items.Clear();
+                listBox2.Items.Add("DAM");
+                listBox2.Items.Add("DAW");
+                listBox2.Items.Add("ASIX");
+                listBox2.Visible = true;
+            } else
             {
                 currentImageIndex = 0;
             }
